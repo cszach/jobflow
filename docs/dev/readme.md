@@ -28,3 +28,7 @@
 ## 🧩 Git
 
 See [git.md](git.md).
+
+## 🗃️ Data model
+
+See [model.md](model.md).
