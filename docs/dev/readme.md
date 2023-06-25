@@ -8,6 +8,15 @@
 - ☁️ Google Cloud products: ?;
 - 🖥️ Deployment: Vercel.
 
+## ✨ Functionalities
+
+- Sign up/log in with email or Google
+- Create a profile
+- Search for jobs
+- Apply to jobs
+- Track job applications
+- Receive notifications when new jobs open
+
 ## 🌟 Potential original features
 
 - 🦾 A ML model to match users with jobs.
