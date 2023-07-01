@@ -14,7 +14,9 @@ MONGO_URI=<your-mongo-uri>
 
 …where `<your-mongo-uri>` is the URI of your MongoDB database. To obtain the
 URI, log in to MongoDB Atlas, and click on _Connect_ on the _JobFlow_ cluster.
-Choose _Drivers_, and then select _Python_ as the driver. Copy the URI;
+Choose _Drivers_, and then select _Python_ as the driver. Copy the URI. Add the
+string `jobflow` after `mongodb.net/` but before `?retryWrites=true&w=majority`.
+This is the URI that you will put in the `.env` file;
 
 4. Run the app: `python run.py`;
 5. The app will be available at `http://localhost:5000`. Try going to
