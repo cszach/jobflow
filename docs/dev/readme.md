@@ -3,7 +3,7 @@
 ## 🍔 Tech stack
 
 - 📱 Front-end: React, Next.js, Material UI, Formik, JavaScript;
-- ⚙️ Back-end: Django, Python, MongoDB Atlas;
+- ⚙️ Back-end: Flask, Python, MongoDB Atlas;
 - 🔑 Authentication: NextAuth.js;
 - ☁️ Google Cloud products: ?;
 - 🖥️ Deployment: Vercel.
