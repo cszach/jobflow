@@ -8,17 +8,20 @@ def get_all_users():
     users = []
 
     for json in db.users.find():
-        users.append(User(**json).to_json())
+        json["_id"] = str(json["_id"])
+        users.append(User(**json).model_dump())
 
-    return jsonify(users)
+    return users
 
 # Create one user
 @app.route("/users", methods=["POST"])
 def create_user():
     user = User(**request.json)
-    db.users.insert_one(user)
+    insert_result = db.users.insert_one(user.model_dump())
+    
+    user.id = str(insert_result.inserted_id)
 
-    return user.to_json()
+    return user.model_dump()
 
 # Read individual user by ID
 @app.route("/users/<id>", methods=["GET"])
