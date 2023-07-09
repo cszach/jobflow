@@ -45,3 +45,16 @@ See [model.md](model.md).
 ## 📡 Routes
 
 See [routes.md](routes.md).
+
+## 📄 Pages
+
+Front-end only.
+
+- 🏠 **Home page**: can have multiple sections, including:
+  - Recommended jobs,
+  - Applied jobs;
+- 👤 **Profile page**: a user's profile page, which lists their information and
+  their applications;
+- 🔍 **Search page**: a page where the user can search for jobs;
+- 📊 **Tracker page**: a page with a kanban board so the user can track their
+  applications.
